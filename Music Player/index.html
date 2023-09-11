@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="./style.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/a32318943c.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <div style="text-align: center;">
+            <audio style="text-align: center;" id="audioPlayer" controls>
+                <source src="https://edyoda.s3.ap-south-1.amazonaws.com/public/musicfiles/without-you.mp3" />
+            </audio>
+            <br />
+            <br />
+            <button id="playBtn"><i class="fa-solid fa-play"></i> Play </button>
+            <button id="pauseBtn"><i class="fa-solid fa-pause"></i> Pause </button>
+            <button id="restartBtn"> <i class="fa-solid fa-reply"></i> Restart </button>
+            <button id="backwardBtn"> <i class="fa-solid fa-backward"></i> 10 secs </button>
+            <button id="forwardBtn"> <i class="fa-solid fa-forward"></i> 10 secs </button>
+            <button id="halfSpeedbtn"> 0.5x </button>
+            <button id="normalSpeedbtn"> 1x </button>
+            <button id="doubleSpeedbtn"> 2x </button>
+
+            <div id="progress-wrapper">
+                <div id="progress-bar">
+
+                </div>
+            </div>
+
+        </div>
+
+        <script src="./index.js"> </script>
+    </body>
+
+</html>

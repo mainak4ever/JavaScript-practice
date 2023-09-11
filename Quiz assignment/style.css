@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#quiz {
+    background-color: #54c3ef;
+    padding: 10px;
+    /* display: flex;
+    flex-direction: column; 
+    align-items: center;
+    min-height: 100vh;  */
+}
+
+#heading {
+    position: relative;
+    left: -70px;
+    font-size: 60px;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.7);
+    color: #fad744;
+    text-align: center;
+    font-family: 'Caveat Brush', cursive;
+    /* padding-left: 30%; */
+    /* padding: 20px; */
+}
+
+#box {
+    display: grid;
+    grid-template-columns: 1.7fr 0.3fr;
+    grid-gap: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+    height: auto;
+
+}
+
+
+#contents {
+    padding: 20px;
+    background-color: #2b3252;
+    color: #fad744;
+    border-radius: 5px;
+    /* max-width: 600px; */
+}
+
+.questionContainer {
+    padding: 10px 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-bottom: 1px solid #fad744;
+    line-height: 1.5;
+}
+
+.optionsContainer {
+    display: block;
+    /* Display the options on separate lines */
+}
+
+.optionsContainer label {
+    display: block;
+    /* Each option should be on a new line */
+    margin-bottom: 5px;
+    /* Add spacing between options */
+    position: relative;
+    /* Create a positioning context */
+    padding-left: 25px;
+    /* Add some left padding for the radio button */
+}
+
+.optionsContainer input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#submitBtn {
+    display: block;
+    margin: 20px auto;
+    background-color: #fad744;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#scoreBox {
+    position: sticky;
+    /* margin-right: 50px; */
+    top: 10px;
+    background-color: lightgray;
+    height: 150px;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.scoreHead {
+    color: black;
+}
+
+#scoreValue {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 599px) {
+    #heading {
+        font-size: 40px;
+        left: -50px;
+    }
+
+    #scoreValue {
+        font-size: 17px;
+    }
+}

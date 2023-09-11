@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify</title>
+        <link rel="icon" href="./favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./styles.css">
+        <script src="https://kit.fontawesome.com/b5328c2db7.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+            <section>
+                <div id='player'>
+                    <img id='current-image' src="https://m.media-amazon.com/images/I/81mNRm3F6KL._SS500_.jpg">
+                    <audio style="text-align: center;" id="audioPlayer">
+                        <source src="https://edyoda.s3.ap-south-1.amazonaws.com/public/musicfiles/without-you.mp3" />
+                    </audio>
+                    <div id="progressWrapper">
+                        <div id="progressBar"></div>
+                    </div>
+                    <div class='player-icons'>
+                        <i class="fa-solid fa-shuffle small-buttons" id='shuffle'></i>
+                        <i class="fa-solid fa-backward-step small-buttons" id="prev-song"></i>
+                        <i class="fa-solid fa-angles-left small-buttons" id="backward10"></i>
+                        <i class="fa-regular fa-circle-play play-button" id='play-pause'></i>
+                        <i class="fa-solid fa-angles-right small-buttons" id="forward10"></i>
+                        <i class="fa-solid fa-forward-step small-buttons" id='next-song'></i>
+                        <i class="fa-solid fa-rotate-left small-buttons" id='replay'></i>
+                    </div>
+                    <div id="song-details">
+                        <h3 id='current-track'>Without You</h3>
+                        <p id='current-artist'>Avincii</p>
+                    </div>
+                </div>
+                <div id='playlist'>
+
+                </div>
+            </section>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.7.0.js"
+            integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <script src='./index.js'></script>
+    </body>
+
+</html>

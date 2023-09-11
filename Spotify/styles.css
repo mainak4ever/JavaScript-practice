@@ -1,0 +1,147 @@
+body {
+    font-family: Open Sans, sans-serif;
+}
+
+main {
+    height: 100vh;
+    background-image: url(https://blog.hdwallsource.com/wp-content/uploads/2014/11/gradient-26052-26737-hd-wallpapers.jpg.png);
+    padding: 5% 16%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    background-color: rgba(255, 223, 238, .4);
+    border-radius: 16px;
+    padding: 24px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 8px rgba(135, 206, 250, .4);
+}
+
+#player {
+    /* display: flex;
+    flex-direction: column; */
+    width: 65%;
+    padding-top: 25px;
+}
+
+#playlist {
+    width: 35%;
+}
+
+#player img {
+    width: 300px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+}
+
+#progressWrapper {
+    width: 100%;
+    height: 5px;
+    background-color: #15124b;
+    opacity: .7;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#progressBar {
+    width: 0%;
+    height: 5px;
+    background-color: #0096ff;
+    opacity: .5;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.player-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.player-icons i {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.small-buttons {
+    font-size: 25px;
+    opacity: 0.6;
+}
+
+.small-buttons span {
+    font-size: 16px;
+    text-emphasis: none;
+}
+
+.small-buttons:hover,
+.play-button:hover {
+    opacity: 1;
+}
+
+.play-button {
+    font-size: 46px;
+    color: #15124b;
+    opacity: .6;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+}
+
+
+#song-details {
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: .5px;
+    margin-bottom: 8px;
+}
+
+#playlist {
+    width: 35%;
+    height: 75vh;
+    overflow-y: auto;
+    border-left: 1px solid rgba(0, 0, 0, .2);
+    text-align: left;
+    padding-left: 24px;
+    box-sizing: border-box;
+    margin-left: 24px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.list-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 16px;
+}

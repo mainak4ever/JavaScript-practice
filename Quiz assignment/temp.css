@@ -1,0 +1,81 @@
+/* Reset default margin and padding for the body element */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#quiz {
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column; /* Arrange content in a column */
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh; /* Ensure the content takes up at least the full viewport height */
+}
+
+#heading {
+    font-size: 35px;
+    color: yellow;
+    text-align: center;
+    padding: 20px;
+}
+
+#box {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: flex-start; /* Align items to the top of the box */
+    /* Add margin to separate content and score box */
+    margin-top: 20px;
+}
+
+#contents {
+    padding: 20px;
+    background-color: darkblue;
+    color: yellow;
+    max-width: 600px;
+}
+
+.questionContainer {
+    padding: 10px 10px;
+    border-bottom: 1px solid yellow;
+}
+
+.optionsContainer {
+    display: block; /* Display the options on separate lines */
+}
+
+.optionsContainer label {
+    display: block; /* Each option should be on a new line */
+    margin-bottom: 5px; /* Add spacing between options */
+    position: relative; /* Create a positioning context */
+    padding-left: 25px; /* Add some left padding for the radio button */
+}
+
+.optionsContainer input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#submitBtn {
+    display: block;
+    margin: 20px auto;
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+}
+
+#scoreBox {
+    top: 0;
+    position: sticky;
+    background-color: lightgray;
+    float: right; /* Align the score box to the right */
+    width: 100px;
+    height: 150px;
+    margin-left: 10px; /* Adjust the margin to separate from content */
+    padding: 10px;
+}
+
+.scoreHead {
+    color: black;
+    font-weight: bold;
+}
